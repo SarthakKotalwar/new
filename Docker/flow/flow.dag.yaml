@@ -1,0 +1,16 @@
+inputs:
+  parameter1:
+    type: image
+    default: Lightbox-Text-Effect-600.jpg
+outputs:
+  Output:
+    type: string
+    reference: ${demo.output}
+nodes:
+- name: demo
+  type: python
+  source:
+    type: code
+    path: demo.py
+  inputs:
+    image_bytes: ${inputs.parameter1}

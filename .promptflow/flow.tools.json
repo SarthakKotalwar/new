@@ -1,0 +1,18 @@
+{
+  "package": {},
+  "code": {
+    "demo.py": {
+      "type": "python",
+      "inputs": {
+        "image_bytes": {
+          "type": [
+            "object"
+          ]
+        }
+      },
+      "description": "Tool for extracting text from an image given its bytes and converting it to speech.",
+      "source": "demo.py",
+      "function": "extract_text_and_convert_to_speech"
+    }
+  }
+}

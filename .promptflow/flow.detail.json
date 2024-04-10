@@ -1,0 +1,133 @@
+{
+  "flow_runs": [
+    {
+      "run_id": "4f86f11a-0eb7-4b90-8d91-de6b832dde36_0",
+      "status": "Completed",
+      "error": null,
+      "inputs": {
+        "parameter1": {
+          "data:image/jpeg;path": ".promptflow/intermediate/65bac121-b6f4-440b-a6d0-b8d1c9a9a299.jpeg"
+        }
+      },
+      "output": {
+        "Output": "Extracted text has been spoken and saved as output.mp3"
+      },
+      "metrics": null,
+      "request": null,
+      "parent_run_id": "4f86f11a-0eb7-4b90-8d91-de6b832dde36",
+      "root_run_id": "4f86f11a-0eb7-4b90-8d91-de6b832dde36",
+      "source_run_id": null,
+      "flow_id": "default_flow_id",
+      "start_time": "2024-04-04T11:45:20.899708Z",
+      "end_time": "2024-04-04T11:45:23.456260Z",
+      "index": 0,
+      "api_calls": [
+        {
+          "name": "flow",
+          "node_name": "flow",
+          "type": "Flow",
+          "start_time": 1712211320.899708,
+          "end_time": 1712211323.45626,
+          "children": [
+            {
+              "name": "extract_text_and_convert_to_speech",
+              "type": "Function",
+              "inputs": {
+                "image_bytes": {
+                  "data:image/jpeg;path": ".promptflow/intermediate/ed28aaba-463d-4804-a1e6-d9feb6665037.jpeg"
+                }
+              },
+              "output": "Extracted text has been spoken and saved as output.mp3",
+              "start_time": 1712211321.005441,
+              "end_time": 1712211323.453252,
+              "error": null,
+              "children": [],
+              "node_name": "demo",
+              "parent_id": "",
+              "id": "5205f399-2ee1-4f68-91c9-06f7be9fbc5a",
+              "system_metrics": {}
+            }
+          ],
+          "system_metrics": {
+            "duration": 2.556552,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "total_tokens": 0
+          },
+          "inputs": {
+            "parameter1": {
+              "data:image/jpeg;path": ".promptflow/intermediate/4b3ac66a-b75a-40d1-86ca-ac753f2899ca.jpeg"
+            }
+          },
+          "output": {
+            "Output": "Extracted text has been spoken and saved as output.mp3"
+          },
+          "error": null
+        }
+      ],
+      "name": "",
+      "description": "",
+      "tags": null,
+      "system_metrics": {
+        "duration": 2.556552,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      },
+      "result": {
+        "Output": "Extracted text has been spoken and saved as output.mp3"
+      },
+      "upload_metrics": false
+    }
+  ],
+  "node_runs": [
+    {
+      "node": "demo",
+      "flow_run_id": "4f86f11a-0eb7-4b90-8d91-de6b832dde36",
+      "run_id": "4f86f11a-0eb7-4b90-8d91-de6b832dde36_demo_0",
+      "status": "Completed",
+      "inputs": {
+        "image_bytes": {
+          "data:image/jpeg;path": ".promptflow/intermediate/714cc18c-d64d-46db-b9a1-db50a9a1ced5.jpeg"
+        }
+      },
+      "output": "Extracted text has been spoken and saved as output.mp3",
+      "metrics": null,
+      "error": null,
+      "parent_run_id": "4f86f11a-0eb7-4b90-8d91-de6b832dde36_0",
+      "start_time": "2024-04-04T11:45:21.005441Z",
+      "end_time": "2024-04-04T11:45:23.453252Z",
+      "index": 0,
+      "api_calls": [
+        {
+          "name": "extract_text_and_convert_to_speech",
+          "type": "Function",
+          "inputs": {
+            "image_bytes": {
+              "data:image/jpeg;path": ".promptflow/intermediate/ed28aaba-463d-4804-a1e6-d9feb6665037.jpeg"
+            }
+          },
+          "output": "Extracted text has been spoken and saved as output.mp3",
+          "start_time": 1712211321.005441,
+          "end_time": 1712211323.453252,
+          "error": null,
+          "children": [],
+          "node_name": "demo",
+          "parent_id": "",
+          "id": "5205f399-2ee1-4f68-91c9-06f7be9fbc5a",
+          "system_metrics": {}
+        }
+      ],
+      "cached_run_id": null,
+      "cached_flow_run_id": null,
+      "logs": {
+        "stdout": "",
+        "stderr": ""
+      },
+      "system_metrics": {
+        "duration": 2.447811
+      },
+      "result": "Extracted text has been spoken and saved as output.mp3"
+    }
+  ]
+}

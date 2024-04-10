@@ -1,0 +1,12 @@
+{
+  "nodes": {
+    "demo": {
+      "variant_0": {
+        "inputs": {
+          "input1": [],
+          "image_bytes": []
+        }
+      }
+    }
+  }
+}
